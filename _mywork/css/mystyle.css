@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1400px) {
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -70px;
+        visibility: hidden;
+    }
+    .display-small-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Fix <a name=""> anchor when somethings sticks at top. */
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -200px;
+        visibility: hidden;
+    }
+    /* Lock logo position when in lower resolution.*/
+    .navbar-brand {
+        top: 0px;
+        left: 70px;
+        position: fixed;
+    }
+    /* Fix Google map in low resolution. */
+    .display-small-none {
+        display: block;
+    }
+}
+
+div>h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+.card-header>h3 {
+    color: whitesmoke;
+}
+
+.round>img {
+    width: 100%;
+}
+
+h3, h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 1000;
+    font-family: 'Microsoft JhengHei', "Microsoft YaHei", "STHeiti", Helvetica;
+}
+
+body {
+    background-color: white;
+}
+
+p {
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Microsoft JhengHei', "Microsoft YaHei", "STHeiti", Helvetica;
+}
+
+.card-columns {
+    margin: 1em;
+}
+
+.nav-link, .dropdown-item {
+    /* height: 1em; */
+    text-align: center;
+    color: limegreen;
+    font-family: 'Microsoft JhengHei', "Microsoft YaHei", "STHeiti", Helvetica;
+}
+
+.nav-link:hover, .dropdown-item:hover, .navbar-nav>li>.dropdown-menu {
+    border-radius: 4px;
+    color: lightgreen;
+    background-color: lightslategray;
+}
+
+h1.slide {
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-family: 'Microsoft JhengHei';
+    background-color: white;
+    opacity: 0.5;
+}

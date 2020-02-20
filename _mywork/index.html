@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beitou Tour</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar, lists and logo. -->
+    <nav class="navbar d-flex navbar-expand-sm bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span style="border-radius: 4px;
+                     color: white;
+                     font-family: 'Microsoft JhengHei';
+                     font-weight: bolder;
+                     font-size: 1em;">三</span>
+        </button>
+        <!--Brand-->
+        <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="./images/logo.png" style="max-height: 30px;"></img>
+        </a>
+        <!--Nation icon-->
+        <div style="top: 10px; right: 5px; position: fixed;">
+            <!-- Translation option: -->
+            <a href="#" style="margin: 4px">
+                <img class="img-fluid" src="./images/ame.png" style="max-height: 20px"></img>
+            </a>
+            <a href="#" style="margin: 4px">
+                <img class="img-fluid" src="./images/tai.png" style="max-height: 20px"></img>
+            </a>
+            <a href="#" style="margin: 4px">
+                <img class="img-fluid" src="./images/jap.png" style="max-height: 20px"></img>
+            </a>
+        </div>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#中山">
+                        <img class="img-fluid" src="./images/link1.png" style="max-height: 30px"></img>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#溫泉">
+                        <img class="img-fluid" src="./images/link2.png" style="max-height: 30px"></img>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#交通">
+                        <img class="img-fluid" src="./images/link3.png" style="max-height: 30px"></img>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Key visual: carousel -->
+    <div id="playList" data-interval="2000" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators" style="z-index: 1;">
+            <li data-target="#playList" data-slide-to="0" class="active"></li>
+            <li data-target="#playList" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Number:0 -->
+                <picture>
+                    <source srcset="./images/kv1-207.png" media="(min-width: 1400px)">
+                    <source srcset="./images/kv1-147.png" media="(min-width: 768px)">
+                    <source srcset="./images/kv1-87.png" media="(min-width: 576px)">
+                    <img srcset="./images/kv1-87.png" class="d-block img-fluid">
+                </picture>
+                <div class="carousel-caption">
+                    <br><br>
+                    <h1 class="slide">陽明山擎天崗</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Number:1 -->
+                <picture>
+                    <source srcset="./images/kv2-207.png" media="(min-width: 1400px)">
+                    <source srcset="./images/kv2-147.png" media="(min-width: 768px)">
+                    <source srcset="./images/kv2-87.png" media="(min-width: 576px)">
+                    <img srcset="./images/kv2-87.png" class="d-block img-fluid">
+                </picture>
+                <div class="carousel-caption">
+                    <br><br>
+                    <h1 class="slide">地熱谷夏季一景</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#playList" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#playList" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- </div> -->
+
+
+
+    <!-- end if carousel (#playList) -->
+    <p></p>
+    <!-- end of container -->
+
+    <!-- Introductions: Mountians -->
+    <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row no-gutters">
+            <div class="col-sm-3">
+                <div>
+                    <div style="background-color:lightskyblue;"><a name="中山" class="anchor" id="top"></a>
+                        <h2>中正山</h2>
+                    </div>
+                    <div class="round" style="background-color:lightgray;">
+                        <img class="img-fluid" src="./images/中正山.png" id="myImg"
+                            onclick="document.getElementById('中正山').style.display='block'"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9" style="background-color:rgb(238, 247, 253);">
+                <p style="font-weight: 800">海拔高度：646公尺</p>
+                <p>
+                    原名彌陀山，別名十八份山或大竿林山。後為紀念前總統蔣中正而改名。
+                    1956年林務局配合總統府意象造林，提供黑松苗種，在山上種出廣達一萬
+                    平方公尺的「中正」二字，天氣晴朗時從北投市區清晰可見，為北投地標，
+                    但之後因松材線蟲侵蝕松樹多年及2007年自願修剪的志工過世，逐漸消失。
+                    目前鋪設有中正山親山步道可供攀登，頂端可遠眺七星山及紗帽山。附圖為
+                    位於山頂之觀景台。
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="row no-gutters">
+            <div class="col-sm-9" style="background-color:rgb(238, 247, 253);">
+                <p style="font-weight: 800">海拔高度：643公尺</p>
+                <p>
+                    為七星山的寄生火山，因其形似於烏紗帽，故有此名，由於是火山的關係，
+                    因此擁有豐富的火山地形，而溫泉也是這裡的特殊景觀，吸引了許多的人。
+                    此外紗帽山擁有副熱帶和熱帶的生態景觀。沿途道路上多溫泉。
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <div style="background-color:lightskyblue;"><a name="紗帽山" class="anchor" id="top"></a>
+                        <h2>紗帽山</h2>
+                    </div>
+                    <div class="round" style="background-color:lightgray;">
+                        <img class="img-fluid" src="./images/紗帽山.png" id="myImg"
+                            onclick="document.getElementById('紗帽山').style.display='block'"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <div class="row no-gutters">
+            <div class="col-sm-3">
+                <div>
+                    <div style="background-color:lightskyblue;"><a name="向天山" class="anchor" id="top"></a>
+                        <h2>向天山</h2>
+                    </div>
+                    <div class="round" style="background-color:lightgray;">
+                        <img class="img-fluid" src="./images/向天山.png" id="myImg"
+                            onclick="document.getElementById('向天山').style.display='block'"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9" style="background-color:rgb(238, 247, 253);">
+                <p style="font-weight: 800">海拔高度：977公尺</p>
+                <p>
+                    大屯山的寄生火山，岩層主要由角閃石兩輝安山岩所組成。
+                    面天山大約在四十萬年前形成，為大屯火山群晚期活動的產物，
+                    山形圓潤整齊，為典型的鐘狀火山。與它隔著淡水河遙遙相對的是觀音山，
+                    淡水河在彼處流入台灣海峽，因兩側的火山熔岩與碎屑物漫流入海，
+                    而形成火山海岸。附圖為一月中旬於向天池(向天山之火口湖)附近拍攝。
+                </p>
+            </div>
+        </div>
+        <p></p>
+        <div class="row no-gutters">
+            <div class="col-sm-9" style="background-color:rgb(238, 247, 253);">
+                <p style="font-weight: 800">海拔高度：1092公尺</p>
+                <p>
+                    大屯山位於台灣西北部的陽明山國家公園內，轄區在台北市的北投區，
+                    海拔標高是 1,092 公尺，為一錐狀活火山，地理上屬於大屯火山群的大屯山亞群，
+                    目前是台灣境內唯一的活火山，由大屯火山觀測站（TVO）負責監測與研究事務。
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <div style="background-color:lightskyblue;"><a name="大屯山" class="anchor" id="top"></a>
+                        <h2>大屯山</h2>
+                    </div>
+                    <div class="round" style="background-color:lightgray;">
+                        <img class="img-fluid" src="./images/大屯山.png" id="myImg"
+                            onclick="document.getElementById('大屯山').style.display='block'"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <div class="row no-gutters">
+            <div class="col-sm-3">
+                <div>
+                    <div style="background-color:lightskyblue;"><a name="七星山" class="anchor" id="top"></a>
+                        <h2>七星山</h2>
+                    </div>
+                    <div class="round" style="background-color:lightgray;">
+                        <img class="img-fluid" src="./images/七星山.png" id="myImg"
+                            onclick="document.getElementById('七星山').style.display='block'"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9" style="background-color:rgb(238, 247, 253);">
+                <p style="font-weight: 800">海拔高度：1120公尺</p>
+                <p>
+                    行政區為台北市北投區，是台北市第一高的山岳。七星山為一複式火山，
+                    地理上屬於大屯火山彙，峰項置有一等三角點，山頂視野寬闊，
+                    能將整個大台北地區一覽無遺。分主峰與東峰兩處高點。
+                    與附圖為一月初自小油坑登山口上山時，山頂遊客如織之景象。
+                </p>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+    <!-- Introductions:Hot springs -->
+    <div class="container-fluid">
+        <div class="card-deck"><a name="溫泉" class="anchor" id="top"></a>
+            <div class="card bg-primary">
+                <div class="card-img-top round">
+                    <img class="img-fluid" src="./images/card1.png" id="myImg"
+                        onclick="document.getElementById('白磺').style.display='block'"></img>
+                </div>
+                <div class="card-header">
+                    <h3>硫磺谷---白磺</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        白磺溫泉，屬於酸性硫磺鹽泉，
+                        水溫通常在56－90℃之間，
+                        屬弱酸性，泉質混濁含白色沉澱。
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-info">
+                <div class="card-img-top round">
+                    <img class="img-fluid" src="./images/card2.png" id="myImg"
+                        onclick="document.getElementById('青磺').style.display='block'"></img>
+                </div>
+                <div class="card-header">
+                    <h3>地熱谷---青磺</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        青磺溫泉海拔較低，是屬於酸性綠礬泉，
+                        水溫在90℃以上，有腐蝕性，
+                        泉質清澈呈淡藍色。
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-warning">
+                <div class="card-img-top round">
+                    <img class="img-fluid" src="./images/card3.png" id="myImg"
+                        onclick="document.getElementById('鐵磺').style.display='block'"></img>
+                </div>
+                <div class="card-header">
+                    <h3>六窟---鐵磺</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        鐵磺溫泉，是中性碳酸鹽泉，
+                        介於40－60℃，屬弱鹼性，
+                        水中富含鐵礦物質。稀有度略高。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Transportation Info -->
+    <div class="container-fluid"><a name="交通" class="anchor" id="top"></a>
+        <div class="row no-gutters">
+            <div class="col-sm-6 px-1">
+                <div style="background-color: lightskyblue;">
+                    <h3>地圖資訊</h3>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2661293141723!2d121.55874761414982!3d25.194246183897537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442adf824cfc74b%3A0x5c0be3a34fc3b079!2z6Zm95piO5bGx5ZyL5a625YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1579588109083!5m2!1szh-TW!2stw"
+                    width=100% height=93% frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="display-small-none">
+                <p></p>
+            </div>
+            <div class="col-sm-6 px-1">
+                <h3 style="background-color: lightskyblue;">公車</h3>
+                <img class="img-fluid" src="./images/trans.png" id="myImg"
+                    onclick="document.getElementById('公車').style.display='block'" style=" object-fit: contain;"></img>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="d-flex flex-row-reverse card-footer">
+        <a style="font-size: 0.5em; margin: 1em;">Written in 2020 Jan.21</a>
+        <a href="https://github.com/ckhomo/" target=" ">My Github</a>
+
+    </div>
+    <!--My modals: should have better solution using JS. -->
+    <!-- source: https://www.w3schools.com/w3css/w3css_modal.asp -->
+    <div id="中正山" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/中正山.png" style="width:100%;">
+        </div>
+    </div>
+    <div id="紗帽山" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/紗帽山.png" style="width:100%">
+        </div>
+    </div>
+    <div id="七星山" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/七星山.png" style="width:100%">
+        </div>
+    </div>
+    <div id="大屯山" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/大屯山.png" style="width:100%">
+        </div>
+    </div>
+    <div id="向天山" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/向天山.png" style="width:100%">
+        </div>
+    </div>
+    <div id="白磺" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/card1.png" style="width:100%">
+        </div>
+    </div>
+    <div id="青磺" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/card2.png" style="width:100%">
+        </div>
+    </div>
+    <div id="鐵磺" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/card3.png" style="width:100%">
+        </div>
+    </div>
+    <div id="公車" class="w3-modal" onclick="this.style.display='none'" style="z-index: 10;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img src="./images/trans.png" style="width:100%">
+        </div>
+    </div>
+</body>
+<script>
+    //命名為 top_scroll_percent_bar
+    function top_scroll_percent_bar() {
+        $("body").append("<div class=top_scroll_percent_bar_bg></div>"); //產生進度條背景物件
+        $("body").append("<div class=top_scroll_percent_bar></div>"); //進度條 Bar
+        $("body").append("<div class=percent_text></div>"); //進度條 % 文字
+
+        //進度條背景 CSS 樣式
+        $(".top_scroll_percent_bar_bg").css({
+            "position": "fixed",
+            "width": "100%",
+            "background": "rgba(0,0,0,0.33)",
+            "width": "100%",
+            "height": "14px",
+            "bottom": 0,
+            "z-index": 100001,
+        });
+
+        //進度條 Bar CSS 樣式
+        $(".top_scroll_percent_bar").css({
+            "position": "fixed",
+            "background": "#0099ff",
+            "width": 0,
+            "height": "14px",
+            "bottom": 0,
+            "z-index": 100002,
+        });
+
+        //進度條 % 文字 CSS 樣式
+        $(".percent_text").css({
+            "position": "fixed",
+            "width": "100%",
+            "font-size": "9pt",
+            "color": "#ffffff",
+            "line-height": "14px",
+            "text-align": "center",
+            "bottom": 0,
+            "z-index": 100003,
+        });
+
+        function window_scroll() {
+            var window_height = $(window).height(); //視窗可視高度
+            var total_y = $("body")[0].scrollHeight - window_height; // Y 軸可捲動長度 = Y 軸總長 - 視窗可視高度
+            var scroll_y = $(this).scrollTop(); // Y 軸位置 $(window).scrollTop()
+            $(".top_scroll_percent_bar").css("width", (scroll_y / total_y * 100) + "%"); // Y 軸位置百分比 : 圖像化
+            $(".percent_text").html(parseInt(scroll_y / total_y * 100) + " % "); // Y 軸位置百分比 : 整數 %
+        }
+
+        //初始狀態載入
+        window_scroll();
+
+        //捲動時觸發
+        $(window).scroll(window_scroll);
+
+        //視窗變動時觸發
+        $(window).resize(window_scroll);
+    };
+
+    //載入此 js 文件，所有內容載入完成後即呼叫 top_scroll_percent_bar()
+    window.onload = function () {
+        top_scroll_percent_bar();
+    };
+</script>
+
+</html>

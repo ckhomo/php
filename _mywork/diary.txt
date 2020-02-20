@@ -1,0 +1,18 @@
+0117:
+    Decide topic.
+    Construct basic frame.
+    Anchor setup.
+
+0120:
+    Div: style setup.
+    Add card: hot spring.
+    Optimize: GoogleMap, dropdown list.
+    Add carouset: replace jumbotron.
+    Start adding images and texts.
+
+0121:
+    Add key visual, logoes.
+    Bigger image when clicked.
+    RWD minor adjusts.
+    Remove all rounded.
+    Happy new year!
